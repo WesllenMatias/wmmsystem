@@ -1,9 +1,10 @@
 from mega import Mega
 from pprint import pprint
+import variaveis
 
 
-email = 'wesllen.matias@hotmail.com'
-senha = '2qybcjqw@WMM'
+email = variaveis.email
+senha = variaveis.senha
 
 mega = Mega()
 
