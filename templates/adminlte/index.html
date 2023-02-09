@@ -1,0 +1,55 @@
+{% extends 'adminlte/base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <h1>DASHBOARD</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="small-box bg-warning">
+                <div class="inner">
+                    <h3>{{ temperatura.temperatura }}</h3>
+                    <p>Natal -RN</p>
+                </div>
+                    <div class="icon">
+                <i class="fas fa-temperature-high"></i>
+                </div>
+                {% comment %} <a href="#" class="small-box-footer">
+                Detalhes <i class="fas fa-arrow-circle-right"></i>
+                </a> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="small-box bg-warning">
+                <div class="inner">
+                    <h3>R$ {{ cotacao.cotacao }}</h3>
+                    <p>Cotação Dollar</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                {% comment %} <a href="#" class="small-box-footer">
+                Detalhes <i class="fas fa-arrow-circle-right"></i>
+                </a> {% endcomment %}
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="small-box bg-warning">
+                <div class="inner">
+                    <h3>{{ total_usado.total_usado }} GB</h3>
+                    <p>Total Usado MegaUp</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-box"></i>
+                </div>
+                {% comment %} <a href="#" class="small-box-footer">
+                Detalhes <i class="fas fa-arrow-circle-right"></i>
+                </a> {% endcomment %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
